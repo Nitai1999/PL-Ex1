@@ -1,7 +1,5 @@
-% Truth values are the atoms true and fail, so a boolean expression is
 % itself a goal: it succeeds when its value is true and fails otherwise.
 
-% not/1 is a built-in in swipl, so allow redefining it.
 :- redefine_system_predicate(not(_)).
 
 and(A, B)   :- A, B.
